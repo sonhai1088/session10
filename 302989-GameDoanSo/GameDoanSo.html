@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+let num = Math.floor(Math.random() * 100);
+
+for (let i = 1; i < 10; i ++){
+    let count = 0;
+    let input = parseInt(prompt("Mời bạn nhập số dự đoán:"));
+    if (input < num){
+        count ++;
+        alert("Số bạn nhập nhỏ hơn số cần tìm");
+    } else if (input > num) {
+        count++
+        alert("Số bạn nhập lớn hơn số cần tìm");
+    } else {
+        alert("Bạn là người chiến thắng");
+    }
+}
+
+</script>
+</body>
+</html>
