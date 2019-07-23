@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let arr = ['0983666333', '0932222222', '0912555999', '0973828282'];
+    function check(arr) {
+        this.arr = arr;
+        regexp = /([0][9][8]|[0][9][7])[0-9]{7}/;
+        let result = "";
+        for (let i = 0; i < this.arr.length; i++) {
+            if (regexp.test(arr[i])) {
+                 result += arr[i] + " "
+            }
+        }
+        return result;
+    }
+    document.write(check(arr));
+</script>
+</body>
+</html>
